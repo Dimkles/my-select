@@ -1,0 +1,45 @@
+.mySelect {
+    position: relative;
+    color: #000;
+    font-size: 20px;
+    width: 300px;
+
+    &__toggle {
+        display: block;
+        width: 100%;
+        padding: 7px 12px;
+        font-size: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &__options {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: none;
+        border: 1px solid black;
+        border-radius: 5px;
+
+        &.show {
+            display: block;
+        }
+    }
+
+    &__option {
+        padding: 7px 12px;
+        transition: all 0.2s;
+
+        &:hover {
+            cursor: pointer;
+            background: rgb(206, 202, 202);
+        }
+
+        &.selected {
+            background: rgb(167, 165, 165);
+        }
+    }
+
+}
